@@ -1121,7 +1121,49 @@ main {
 }
 
 
+/* Media query for mobile screens */
+@media (max-width: 400px) {
+  .project-list {
+    grid-template-columns: 1fr; 
+    gap: 20px; 
+  }
 
+  .project-img {
+     width: 100%;
+  height: 100%;
+  object-fit: cover;
+  }
+
+  .project-item-icon-box {
+    font-size: 18px; /* Adjust icon size for mobile */
+    padding: 16px; /* Adjust padding for smaller screens */
+  }
+
+  .project-title {
+    font-size: var(--fs-6); /* Reduce font size for better readability */
+  }
+
+  .project-category {
+    font-size: var(--fs-7); /* Further reduce font size */
+  }
+
+  .select-item button {
+    font-size: var(--fs-7); /* Adjust button font size */
+    padding: 6px 8px; /* Adjust padding for select items */
+  }
+
+  .filter-select {
+    padding: 10px 14px; /* Adjust padding for filter select */
+  }
+
+  /* Ensure that project images maintain the same size */
+  .project-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-1);
+  }
+}
 
 
 /*-----------------------------------*\
